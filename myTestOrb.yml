@@ -7,7 +7,7 @@ commands:
     steps:
       - run: echo "<<parameters.some_word>> World"
 jobs:
-  build:
+  my_build:
     docker:
       - image: circleci/ruby:2.4.2-jessie-node
     steps:
