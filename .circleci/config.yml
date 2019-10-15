@@ -10,4 +10,5 @@ workflows:
         docker:
            image: circleci/ruby:2.4.2-jessie-node
         steps:
+          - checkout
           - hello/my_build
