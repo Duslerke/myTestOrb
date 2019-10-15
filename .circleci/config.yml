@@ -6,9 +6,4 @@ orbs:
 workflows:
   hello-workflow:
     jobs:
-      my_job:
-        docker:
-           image: circleci/ruby:2.4.2-jessie-node
-        steps:
-          - checkout
-          - hello/my_build
+      - hello/my_build
