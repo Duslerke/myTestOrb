@@ -7,5 +7,7 @@ workflows:
   hello-workflow:
     jobs:
       my_job:
+        docker:
+           image: circleci/ruby:2.4.2-jessie-node
         steps:
           - hello/my_build
